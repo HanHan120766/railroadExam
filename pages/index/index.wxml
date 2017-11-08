@@ -1,0 +1,4 @@
+<!-- Hna Qian -->
+<view class="container">
+  <view class="mockExams" bindtap="gotoExam">开始模拟考试</view>
+</view>

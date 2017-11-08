@@ -1,0 +1,57 @@
+/*<!-- Hna Qian -->*/
+.container {
+  margin: 0 30rpx;
+  position: relative;
+}
+.typeTitle {
+  margin-top: 30rpx;
+  font-size: 36rpx;
+  color: #333;
+  padding: 10rpx 0;
+}
+.testContent {
+  margin: 30rpx 10rpx 0;
+  width: 606rpx;
+  padding: 30rpx;
+  line-height: 50rpx;
+  border: 2px solid #eee;
+  background-color: #fff;
+  font-size: 32rpx;
+  color: #666;
+  border-radius: 10rpx;
+}
+.testChoose {
+  margin: 30rpx 10rpx 0;
+  width: 606rpx;
+  padding: 30rpx;
+  border-radius: 10rpx;
+  border: 2px solid #eee;
+  background-color: #fff;
+}
+.testChooseCell {
+  font-size: 32rpx;
+  color: #666;
+  line-height: 40rpx;
+  padding: 20rpx 0;
+}
+.testChooseA {
+  color: #ff3939;
+}
+.result {
+  width: 400rpx;
+  height: 80rpx;
+  border-radius: 10rpx;
+  background-color: #ff3939;
+  color: #fff;
+  font-size: 36rpx;
+  line-height: 80rpx;
+  text-align: center;
+  margin: 60rpx auto;
+}
+.defen {
+  position: absolute;
+  right: 0;
+  top: 0rpx;
+  font-size: 36rpx;
+  color: #ff3939;
+}

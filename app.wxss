@@ -1,0 +1,15 @@
+/*HnaQian*/
+page {
+  background-color: #f1f1f1;
+}
+image {
+    display: block;
+}
+.clearfix::after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}

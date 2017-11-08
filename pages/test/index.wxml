@@ -1,0 +1,24 @@
+<!-- Hna Qian -->
+<view class="container">
+  <view class="typeTitle" wx:if="{{type == 0}}">一、单项选择题</view>
+  <view class="typeTitle" wx:if="{{type == 1}}">二、多项选择题</view>
+  <view class="typeTitle" wx:if="{{type == 2}}">三、判断题</view>
+  <view class="defen">得分：{{defen}}</view>
+  <view class="testContent">{{examNum[type] + '、'}}{{data['试题内容']}}</view>
+  <view class="testChoose" wx:if="{{type == 0 || type == 2}}">
+    <view class="{{danxuanOrPanduan == 'A' ? 'testChooseA' : ''}} testChooseCell" wx:if="{{data['A']}}" bindtap="onclickCell" data-id="A">A -{{data['A']}}</view>
+    <view class="{{danxuanOrPanduan == 'B' ? 'testChooseA' : ''}} testChooseCell" wx:if="{{data['B']}}" bindtap="onclickCell" data-id="B">B -{{data['B']}}</view>
+    <view class="{{danxuanOrPanduan == 'C' ? 'testChooseA' : ''}} testChooseCell" wx:if="{{data['C']}}" bindtap="onclickCell" data-id="C">C -{{data['C']}}</view>
+    <view class="{{danxuanOrPanduan == 'D' ? 'testChooseA' : ''}} testChooseCell" wx:if="{{data['D']}}" bindtap="onclickCell" data-id="D">D -{{data['D']}}</view>
+  </view>
+
+  <view class="testChoose" wx:if="{{type == 1}}">
+    <view class="{{duoxuanShow[0] ? 'testChooseA' : ''}} testChooseCell" wx:if="{{data['A']}}" bindtap="onclickCell" data-id="A">A -{{data['A']}}</view>
+    <view class="{{duoxuanShow[1] ? 'testChooseA' : ''}} testChooseCell" wx:if="{{data['B']}}" bindtap="onclickCell" data-id="B">B -{{data['B']}}</view>
+    <view class="{{duoxuanShow[2] ? 'testChooseA' : ''}} testChooseCell" wx:if="{{data['C']}}" bindtap="onclickCell" data-id="C">C -{{data['C']}}</view>
+    <view class="{{duoxuanShow[3] ? 'testChooseA' : ''}} testChooseCell" wx:if="{{data['D']}}" bindtap="onclickCell" data-id="D">D -{{data['D']}}</view>
+  </view>
+
+  <view class="result" bindtap="getResult">{{isNowExam ? '查看答案' : '确定'}}</view>
+  <view class="result" bindtap="next">下一题</view>
+</view>

@@ -1,0 +1,13 @@
+.container {
+  background-color: #f1f1f1;
+}
+.mockExams {
+  width: 690rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  text-align: center;
+  font-size: 36rpx;
+  background-color: blue;
+  color: #fff;
+  margin: 200rpx auto 0;
+}
